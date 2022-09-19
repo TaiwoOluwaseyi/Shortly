@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Shortly</title>
+  </head>
+  <body>
     <!-- nav container -->
     <nav class="relative container mx-auto p-6">
       <!-- flex container for all items -->
@@ -76,10 +78,35 @@
 
         <!-- Image -->
         <div class="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
-          <img src="./images/illustration-working.svg" alt="">
+          <img src="./images/illustration-working.svg" alt="" />
         </div>
       </div>
     </section>
-  </head>
-  <body></body>
+
+    <!-- shorten section -->
+    <section id="shorten" class="relative bg-gray-100">
+      <!-- shorten container -->
+      <div class="max-w-4xl mx-auto p-6 space-y-6">
+        <!-- form -->
+        <form id="link-form" class="relative flex flex-col w-full p-10 -mt-20 space-y-4 bg-indigo-900 rouned-lg md:flex-row md:space-y-0 md:space-x-3">
+          <input type="text" class="flex-1 p-3 border-2 rounded-lg placeholder-yellow-500 focus:outline-none" placeholder="Shorten a link here" id="link-input">
+          <button class="px-10 py-3 text-w bg-cyan-300 rounded-lg hover:bg-cyan-200 focus:outline-none md:py-2">Shorten It</button>
+        </form>
+
+        <!-- link 1 -->
+        <div class="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
+          <p class="font-bold text-center text-indigo-900 md:text-left">
+           https://frontendmentor.io 
+          </p>
+
+          <div class="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
+           <div class="font-bold text-cyan-300">https://rel.ink/k4IKyk
+           <button class="p-2 px-8 text-white bg-cyan-300 rounded-lg hover:opacity-70 focus:outline-none">Copy</button> 
+           </div> 
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </body>
 </html>
